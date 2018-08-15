@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1" id="viewport">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exchange_test</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top_part">
+        <div class="title">Select currency to exchange:</div>
+        <div class="select_area">
+          <select class="selectpicker" id="currencyDropdown">
+            <option>USD</option>
+            <option>EUR</option>
+            <option>RUB</option>
+            <option>GBP</option>
+          </select>
+        </div>
+      </div>
+      <div class="main_part">
+        <div class="item ETH">
+          <div class="item__title">Etherium</div>
+          <div class="price item__price">
+            <div class="price_text">Price</div>
+            <div class="price_number" id="eth_price"></div>
+          </div>
+          <div class="check item__check">
+            <div class="check_text">Percent change</div>
+            <div class="checkbox">
+              <label class="switch">
+                <input id="eth_percent" type="checkbox" value="ETH"><span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="item__change">
+            <div class="change change__hour">
+              <div class="hour_text">Hour change</div>
+              <div class="hour_number" id="eth_hour"></div>
+            </div>
+            <div class="change change__day">
+              <div class="day_text">Day change</div>
+              <div class="day_number" id="eth_day"></div>
+            </div>
+            <div class="change change__week">
+              <div class="week_text">Week change</div>
+              <div class="week_number" id="eth_week"></div>
+            </div>
+            <div class="change change__month">
+              <div class="month_text">Month change</div>
+              <div class="month_number" id="eth_month"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item LTC">
+          <div class="item__title">Litecoin</div>
+          <div class="price item__price">
+            <div class="price_text">Price</div>
+            <div class="price_number" id="ltc_price"></div>
+          </div>
+          <div class="check item__check">
+            <div class="check_text">Percent change</div>
+            <div class="checkbox">
+              <label class="switch">
+                <input id="ltc_percent" type="checkbox" value="LTC"><span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="item__change">
+            <div class="change change__hour">
+              <div class="hour_text">Hour change</div>
+              <div class="hour_number" id="ltc_hour"></div>
+            </div>
+            <div class="change change__day">
+              <div class="day_text">Day change</div>
+              <div class="day_number" id="ltc_day"></div>
+            </div>
+            <div class="change change__week">
+              <div class="week_text">Week change</div>
+              <div class="week_number" id="ltc_week"></div>
+            </div>
+            <div class="change change__month">
+              <div class="month_text">Month change</div>
+              <div class="month_number" id="ltc_month"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item BTC">
+          <div class="item__title">Bitcoin</div>
+          <div class="price item__price">
+            <div class="price_text">Price</div>
+            <div class="price_number" id="btc_price"></div>
+          </div>
+          <div class="check item__check">
+            <div class="check_text">Percent change</div>
+            <div class="checkbox">
+              <label class="switch">
+                <input id="btc_percent" type="checkbox" value="BTC"><span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="item__change">
+            <div class="change change__hour">
+              <div class="hour_text">Hour change</div>
+              <div class="hour_number" id="btc_hour"></div>
+            </div>
+            <div class="change change__day">
+              <div class="day_text">Day change</div>
+              <div class="day_number" id="btc_day"></div>
+            </div>
+            <div class="change change__week">
+              <div class="week_text">Week change</div>
+              <div class="week_number" id="btc_week"></div>
+            </div>
+            <div class="change change__month">
+              <div class="month_text">Month change</div>
+              <div class="month_number" id="btc_month"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

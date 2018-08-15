@@ -1,0 +1,93 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="initial-scale=1", id="viewport")
+		link(rel="stylesheet", href="css/style.css")
+		title Exchange_test
+	body
+		.wrapper
+			.top_part
+				.title Select currency to exchange:
+				.select_area
+					select.selectpicker#currencyDropdown
+						option USD
+						option EUR
+						option RUB
+						option GBP
+			.main_part
+				.item.ETH
+					.item__title Etherium
+					.price.item__price
+						.price_text Price
+						.price_number#eth_price
+					.check.item__check
+						.check_text Percent change
+						.checkbox
+							label.switch
+								input#eth_percent(type="checkbox", value="ETH")
+								span.slider.round
+					.item__change
+						.change.change__hour
+							.hour_text Hour change
+							.hour_number#eth_hour
+						.change.change__day
+							.day_text Day change
+							.day_number#eth_day
+						.change.change__week
+							.week_text Week change
+							.week_number#eth_week
+						.change.change__month
+							.month_text Month change
+							.month_number#eth_month
+				.item.LTC
+					.item__title Litecoin
+					.price.item__price
+						.price_text Price
+						.price_number#ltc_price
+					.check.item__check
+						.check_text Percent change
+						.checkbox
+							label.switch
+								input#ltc_percent(type="checkbox", value="LTC")
+								span.slider.round
+					.item__change
+						.change.change__hour
+							.hour_text Hour change
+							.hour_number#ltc_hour
+						.change.change__day
+							.day_text Day change
+							.day_number#ltc_day
+						.change.change__week
+							.week_text Week change
+							.week_number#ltc_week
+						.change.change__month
+							.month_text Month change
+							.month_number#ltc_month
+				.item.BTC
+					.item__title Bitcoin
+					.price.item__price
+						.price_text Price
+						.price_number#btc_price
+					.check.item__check
+						.check_text Percent change
+						.checkbox
+							label.switch
+								input#btc_percent(type="checkbox", value="BTC")
+								span.slider.round
+					.item__change
+						.change.change__hour
+							.hour_text Hour change
+							.hour_number#btc_hour
+						.change.change__day
+							.day_text Day change
+							.day_number#btc_day
+						.change.change__week
+							.week_text Week change
+							.week_number#btc_week
+						.change.change__month
+							.month_text Month change
+							.month_number#btc_month
+		script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+		script(src="js/jquery.nice-select.js")
+		script(src="js/script.js")
